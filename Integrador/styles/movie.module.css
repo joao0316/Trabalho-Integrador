@@ -1,0 +1,118 @@
+
+.page {
+    background-color: rgba(238, 191, 105, 0.384);
+    margin-left: 6%;
+    margin-right: 6%;
+    height: 100%;
+    padding: 3%;
+}
+
+.movieImage {
+    height: 40%;
+    width: 30%;
+    border-radius: 30px;
+    margin-left: 30%;
+    margin-bottom: 5%;
+}
+
+.field {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 2%;
+    border: black 0.1rem solid;
+}
+
+.ratingBox {
+    background-color: rgba(204, 204, 204, 0.589);
+    margin-top: 3%;
+    padding: 2%;
+    border: black 0.1rem solid;
+    border-radius: 20px;
+
+    color: black;
+
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+
+    margin-bottom: 10%;
+}
+
+.ratingComment {
+    height: 10vh;
+    width: 40vw;
+    resize: none;
+    border-radius: 20px;
+    border: black 0.1rem solid;
+    padding: 0.8%;
+
+}
+
+.ratingComment:hover {
+    background-color: rgb(221, 220, 220);
+    cursor: pointer;
+}
+
+.ratingComment:focus {
+    animation: resizeComment 0.5s forwards;
+}
+
+.ratingValue {
+    height: 10vh;
+    width: 5vw;
+    font-size: 20px;
+    border: black 0.1rem solid;
+    border-radius: 10px;
+}
+
+.ratingButton {
+    background-color: rgb(142, 228, 142);
+    color: white;
+    border: black 0.1rem solid;
+    border-radius: 20px;
+    height: 10vh;
+    width: 13vw;
+    font-size: 22px;
+}
+
+.ratingButton:hover {
+    background-color: black;
+    color: white;
+    border: white 0.1rem solid;
+}
+
+@keyframes resizeComment {
+    from {
+        height: 10vw;
+    }
+    to {
+        height: 15vw;
+    }
+}
+
+.ratings {
+    background-color: rgba(204, 204, 204, 0.589);
+    border: black 0.1rem solid;
+    border-radius: 20px;
+    padding: 1%;
+    color: black;
+}
+
+.rComment {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 1%;
+    color: white;
+    background-color: gray;
+    border: black 0.1rem solid;
+    border-radius: 10px;
+}
+
+.singleRating {
+    background-color: rgba(255, 255, 255, 0.527);
+    border: black 0.1rem solid;
+    border-radius: 20px;
+    margin-top: 2%;
+    padding: 1%;
+}

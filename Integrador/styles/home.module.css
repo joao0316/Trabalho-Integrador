@@ -1,0 +1,48 @@
+
+.navBar {
+    background-color: white;
+    width: 100vw;
+    height: 10vh;
+}
+
+.btnLogout {
+    background-color: black;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0.15rem solid rgb(196, 16, 16);
+    border-radius: 15px;
+    color:white ;
+    float: right;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.btnLogout:hover {
+    background-color: white;
+    color: black;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.26);
+    width: 80vw;
+    height: 90vh;
+    margin-left: 10%;
+    padding: 2%;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.card {
+    width: 20vw;
+    height: 30vh;
+    background-color: white;
+    border: black 0.1rem solid ;
+    color: black;
+    padding: 2%;
+}
+
+.card:hover{
+    background-color: rgb(197, 197, 197);
+}

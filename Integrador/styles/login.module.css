@@ -1,0 +1,41 @@
+
+.formulario {
+    background-color: rgba(255, 166, 0, 0);
+    height: 59rem;
+    width: 114rem;
+    margin-left: 1%;
+    margin-top: 0%;
+    text-align: center;
+    border: rgba(0, 0, 255, 0) 0.2rem solid;
+    border-radius: 12px;
+}
+
+.form_container {
+    margin-top: 10%;
+}
+
+.form_container input {
+    margin-bottom: 2%;
+}
+
+.form_btn {
+    background-color: rgb(255, 107, 107);
+    color: white;
+    width: 20%;
+    margin-top: 6%;
+    border: gray 0.1rem solid;
+    border-radius: 15px;
+}
+
+.form_btn:hover {
+    background-color: red;
+    color: black;
+}
+
+.title {
+    margin-bottom: 7%;
+    font-size: 3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}

@@ -3,6 +3,8 @@
     background-color: white;
     width: 100vw;
     height: 10vh;
+    display: grid;
+    grid-template-columns: 80% 20%;
 }
 
 .btnLogout {
@@ -16,6 +18,7 @@
     float: right;
     margin-top: 15px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .btnLogout:hover {
@@ -45,4 +48,10 @@
 
 .card:hover{
     background-color: rgb(197, 197, 197);
+}
+
+.searchBar {
+    margin-top: 15px;
+    width: 60%;
+    margin-left: 20px;
 }

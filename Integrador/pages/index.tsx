@@ -7,6 +7,39 @@ import { useEffect, useState } from 'react'
 export default function Home() {
   const router = useRouter();
   const [data, setData]: any = useState();
+  const [saveData, setSaveData]: any = useState();
+  const [search , setSearch]: any = useState();
+
+  function handleSearchEdit(event:any) {
+    event.preventDefault();
+    setSearch(event.target.value);
+    
+    searchSubmit()
+  }
+  
+
+  function searchFilter(vetor: Array<any>) {
+    if ( search == '' ) {
+      return vetor;
+    }
+    else {
+      return vetor.filter(
+        (movie:any) => movie.name.toLowerCase().includes(search)
+      )
+    }
+  }
+
+  function searchSubmit() {
+    
+    try {
+      const filteredArray = searchFilter(saveData);
+      
+      setData(filteredArray);
+    }
+    catch( err:any ) {
+      alert(err.message);
+    }
+  }
 
   async function fetchData() {
     const response = await fetch(`/api/action/movie/select`, {
@@ -16,6 +49,7 @@ export default function Home() {
     const responseJson = await response.json();
 
     setData(responseJson);
+    setSaveData(responseJson);
 
     console.log(data);
   }
@@ -39,6 +73,8 @@ export default function Home() {
   return (
     <main>
       <nav className={styles.navBar}>
+
+        <input value={search} onChange={handleSearchEdit}  className={styles.searchBar} type="text" placeholder="Digite o nome do filme . . ." />
 
         <button className={styles.btnLogout} onClick={logout}>Logout</button>
       </nav>

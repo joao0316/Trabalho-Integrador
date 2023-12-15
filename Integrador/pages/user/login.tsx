@@ -55,7 +55,8 @@ export default function loginPage() {
         <main className={`flex min-h-screen`}>
             <form className={styles.formulario} onSubmit={formSubmit}>
                 <div className={styles.form_container}>
-                    <h1 className={styles.title} >Sistema</h1>
+                    <h1 className={styles.title} >Olá!</h1>
+                    <h1 className={styles.title2}>Seja bem vindo de volta.</h1>
 
                     <input type="text" placeholder="Login" value={formData.login} 
                     onChange={(event) => {handleFormEdit(event , 'login')}} required />

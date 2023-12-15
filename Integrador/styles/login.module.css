@@ -1,41 +1,55 @@
-
 .formulario {
-    background-color: rgba(255, 166, 0, 0);
-    height: 59rem;
-    width: 114rem;
-    margin-left: 1%;
-    margin-top: 0%;
+    background-color: white;
+    height: 30rem;
+    width: 25rem;
+    margin-top: 16%;
+    margin-left: 38%;
     text-align: center;
-    border: rgba(0, 0, 255, 0) 0.2rem solid;
+    border: rgba(255, 255, 255, 0.089) 0.2rem solid;
     border-radius: 12px;
 }
 
 .form_container {
-    margin-top: 10%;
+    margin-top: 1%;
 }
 
 .form_container input {
     margin-bottom: 2%;
 }
 
+.form_container h1 {
+    text-align: left;
+    margin-left: 10%;
+}
+
 .form_btn {
-    background-color: rgb(255, 107, 107);
+    background-color: rgb(72, 11, 184);
     color: white;
-    width: 20%;
-    margin-top: 6%;
-    border: gray 0.1rem solid;
-    border-radius: 15px;
+    width: 60%;
+    margin-top: 5%;
+    border: rgb(95, 95, 95) 0.1rem solid;
+    border-radius: 6px;
 }
 
 .form_btn:hover {
-    background-color: red;
+    background-color: white;
     color: black;
 }
 
 .title {
-    margin-bottom: 7%;
-    font-size: 3rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 0%;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-style: italic;
+    color: rgb(72, 11, 184);
+}
+
+.title2 {
+    margin-bottom: 0%;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(72, 11, 184);
 }
